@@ -49,10 +49,8 @@
         <p>TODO: Add content about this section</p>
     </section>
 
-    <!-- Part 6: JavaScript -->
+    <!-- Script 1: Navbar appears or disappears when you scroll up/down -->
     <script>
-        // TODO: Add code to make it so when you click on a link in the navbar, it smoothly glides down
-
         // Last scroll position
         let lastScrollTop = 0;
         const header = document.querySelector('header');
@@ -71,6 +69,19 @@
             }
             lastScrollTop = Math.max(scrollTop, 0);
         }, false);
+    </script>
+
+    <!-- Script 2: Screen smoothly glides when you click on a navbar section link -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 
 </body>
