@@ -1,0 +1,66 @@
+/* In About, the background color */
+#about { 
+  background-color: #101d24; 
+  color: #f4f4f4;
+}
+/* In Projects, the background and text color */
+#projects { 
+  background-color: #faf6ef; 
+  color: #11222d;
+}
+/* In Skills, the background and text color */
+#skills { 
+  background-color: #ffffff; 
+  color: #10212b;
+}
+/* In Education, the background and text color */
+#education { 
+  background-color: #f0ebe5; 
+  color: #13212c;
+}
+/* In Contact, the background and text color */
+#contact { 
+  background-color: #101d24; 
+  color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* The navbar header */
+header {
+    background-color: #1f2e38;
+    color: #ffffff;
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+}
+/* The clickable nav parts of the header, right-aligned */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+/* The clickable nav parts of the header, the text parts */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/* The heights of each of the 5 sections */
+section {
+    padding: 4rem 2rem;
+    min-height: 100vh;  /* TODO: adjust this once you add actual content */
+}
+
+/* Make the About section start a bit below the header */
+body::before {
+    content: '';
+    display: block;
+    height: 60px;
+}
