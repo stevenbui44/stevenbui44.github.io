@@ -2,6 +2,7 @@
 #about { 
   background-color: #101d24; 
   color: #f4f4f4;
+  padding-top: calc(4rem + 60px);
 }
 /* In Projects, the background and text color */
 #projects { 
@@ -28,6 +29,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fbf6ef;
 }
 
 /* The navbar header */
@@ -39,6 +41,7 @@ header {
     width: 100%;
     top: 0;
     box-sizing: border-box;
+    transition: transform 0.1s ease-in-out;
 }
 /* The clickable nav parts of the header, right-aligned */
 nav {
@@ -62,5 +65,5 @@ section {
 body::before {
     content: '';
     display: block;
-    height: 60px;
+    height: 0;
 }

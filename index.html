@@ -52,6 +52,26 @@
     <!-- Part 6: JavaScript -->
     <script>
         // TODO: Add code to make it so when you click on a link in the navbar, it smoothly glides down
+
+        // Last scroll position
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+        const headerHeight = header.offsetHeight;
+
+        // Event listener when you scroll up or down
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                // if scrolling down, bring the header up
+                header.style.transform = `translateY(-${headerHeight}px)`;
+            } 
+            else {
+                // if scrolling up, make the header reappear
+                header.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = Math.max(scrollTop, 0);
+        }, false);
     </script>
+
 </body>
 </html>
