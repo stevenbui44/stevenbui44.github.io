@@ -8,18 +8,114 @@
   justify-content: center;
   position: relative;
   z-index: 5;
+  height: 96vh;
 }
 /* In About, the container with the content */
 .about-container {
   width: 1100px;
   padding-top: 120px !important;  /* Gap between header and start of content */
-  padding: 2rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  margin-left: 85px;
+  margin-right: 85px;
   background-color: #101d24;
   border: 1px solid #273f53;
   border-bottom: none;
   border-top: none;
   z-index: 6;
 }
+
+/* In About, the top section with the avatar and university information */
+.about-top {
+  height: 26%;
+  display: grid;
+  grid-template-columns: 15% 85%;         /* Left section 10%, right section 90% */
+  border-bottom: 1px solid #f4f4f4;     /* Horizontal line*/
+}
+/* In About, the profile picture section */
+.about-top-left {
+  border-right: 1px solid #f4f4f4;      /* Vertical line */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.avatar-container {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* In About, the university info section */
+.about-top-right {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.university-info {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* In About, the middle section of who I am */
+.about-bottom {
+  height: 74%;
+}
+/* In About, "Software Engineer" */
+.role {
+  color: #4CAF50;
+  font-size: 14px;
+}
+/* In About, "Hello, I'm Steven." */
+.intro {
+  color: white;
+  font-size: 30px;
+}
+/* In About, my description */
+.description {
+  color: #a0a0a0;
+  font-size: 20px;
+}
+
+/* In About, the bottom section with the resume button and email */
+.about-footer {
+  display: flex;
+  border-top: 1px solid #f4f4f4;
+  padding-top: 20px;
+}
+/* In About, the container for the "Grab my resume" button */
+.about-footer-left {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* In About, the "Grab my resume" button itself */
+.resume-button {
+  cursor: pointer;
+}
+/* In About, the container for the email name and link */
+.about-footer-right {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* In About, the email "stevenbui44@gmail.com" */
+.email {
+  margin: 0;
+}
+/* In About, the link to "Craft an email" */
+.email-link {
+  font-size: 14px;
+}
+
 
 
 /* In Projects, the background and text color */
@@ -113,7 +209,7 @@ nav a {
 /* The heights of each of the 5 sections */
 section {
     padding: 4rem 2rem;
-    min-height: 100vh;  /* TODO: adjust this once you add actual content */
+    min-height: 10vh;  /* TODO: adjust this once you add actual content */
     /* border-radius: 20px; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
