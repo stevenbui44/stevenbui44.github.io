@@ -46,14 +46,21 @@
   position: relative;
   z-index: 2;
 }
+
+
 /* In Contact, the background and text color */
 #contact { 
   background-color: #101d24; 
+  width: 100%;
   color: #ffffff;
   margin-top: -40px;
   position: relative;
   z-index: 3;
   border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* transition: width 0.001s ease, margin-bottom 0.001s ease; */
+  transition: width 0.2s ease, margin-bottom 0.2s ease;
 }
 
 
