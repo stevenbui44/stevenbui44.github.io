@@ -1,48 +1,96 @@
 /* In About, the background color */
 #about { 
-  background-color: #101d24; 
+  background-color: #12222c; 
   color: #f4f4f4;
-  padding-top: calc(4rem + 60px);
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
 }
+/* In About, the container with the content */
+.about-container {
+  width: 1100px;
+  padding-top: 120px !important;  /* Gap between header and start of content */
+  padding: 2rem;
+  background-color: #101d24;
+  border: 1px solid #273f53;
+  border-bottom: none;
+  border-top: none;
+  z-index: 6;
+}
+
+
 /* In Projects, the background and text color */
 #projects { 
   background-color: #faf6ef; 
   color: #11222d;
+  margin-top: -20px;
+  position: relative;
+  z-index: 4;
 }
 /* In Skills, the background and text color */
 #skills { 
   background-color: #ffffff; 
   color: #10212b;
+  margin-top: -20px;
+  position: relative;
+  z-index: 3;
 }
 /* In Education, the background and text color */
 #education { 
   background-color: #f0ebe5; 
   color: #13212c;
+  margin-top: -20px;
+  position: relative;
+  z-index: 2;
 }
 /* In Contact, the background and text color */
 #contact { 
   background-color: #101d24; 
   color: #ffffff;
+  margin-top: -40px;
+  position: relative;
+  z-index: 3;
+  border-radius: 20px;
 }
+
+
+
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fbf6ef;
+    /* background-color: #fbf6ef; */
+    background-color: red;
 }
 
 /* The navbar header */
 header {
     background-color: #1f2e38;
     color: #ffffff;
-    padding: 2rem;
+    padding: 1.95rem;
     position: fixed;
     width: 100%;
     top: 0;
     box-sizing: border-box;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    z-index: 10;
+    /* border-bottom: 2px solid #cfd1d2; */
 }
+/* The line at the bottom of the navbar */
+header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5px;
+  background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+}
+
 /* The clickable nav parts of the header, right-aligned */
 nav {
     display: flex;
@@ -59,6 +107,10 @@ nav a {
 section {
     padding: 4rem 2rem;
     min-height: 100vh;  /* TODO: adjust this once you add actual content */
+    /* border-radius: 20px; */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
 }
 
 /* Make the About section start a bit below the header */
