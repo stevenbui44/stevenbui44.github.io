@@ -128,8 +128,8 @@
   z-index: 4;
   padding: 4rem 0;
 }
-/* In Projects, the 1200px wide container where everything is */
-.project-container {
+/* In Projects and Education, the 1200px wide container where everything is */
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -176,7 +176,7 @@
   font-size: 20px;
   color: blue;
 }
-/* In Projects, the links 'GitHub Code' and 'Demo' */
+/* In Projects, the links 'GitHub' and 'Demo' */
 .project-links a {
   margin-left: 10px;
   text-decoration: none;
@@ -218,6 +218,10 @@
   position: relative;
   z-index: 3;
 }
+
+
+
+
 /* In Education, the background and text color */
 #education { 
   background-color: #f0ebe5; 
@@ -225,6 +229,61 @@
   margin-top: -20px;
   position: relative;
   z-index: 2;
+  padding: 4rem 0;
+}
+/* In Education, the header 'Some coursework...' */
+.education-header {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+/* In Education, the section description underneath 'Some coursework...' */
+.education-subheader {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+/* In Education, the 'View transcript' button */
+.view-transcript-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #e8e4dd;
+  color: #10202a;
+  border: 1px solid #c0beb8;
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  transition: background-color 1.1s ease;
+  transition: border 0.1s ease;
+}
+/* In Education, hovering over the 'View transcript' button makes it darker */
+.view-transcript-btn:hover {
+  background-color: #dcdbd7;
+  border: 2px solid #adaba8;
+}
+
+/* In Education, the table for courses */
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 80px;
+}
+/* In Education, the course table HEADER */
+.course-table th {
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 2px solid #13212c;
+  padding: 15px;
+  text-align: left;
+}
+/* In Education, the course table ROW */
+.course-table td {
+  border-bottom: 1px solid #13212c;
+  padding: 15px;
+  text-align: left;
+}
+/* In Education, the last course table row should not have a horizontal line */
+.course-table tr:last-child td {
+  border-bottom: none;
 }
 
 
