@@ -8,7 +8,8 @@
   justify-content: center;
   position: relative;
   z-index: 5;
-  height: 96vh;
+  /* height: 96vh; */
+  height: 70vh;
 }
 /* In About, the container with the content */
 .about-container {
@@ -125,7 +126,90 @@
   margin-top: -20px;
   position: relative;
   z-index: 4;
+  padding: 4rem 0;
 }
+/* In Projects, the 1200px wide container where everything is */
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-left: 175px;
+  padding-right: 175px;
+}
+/* In Projects, the "Handpicked projects..." header */
+.projects-header {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+/* In Projects, the section description underneath "Handpicked projects..." */
+.projects-subheader {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+/* In Projects, a single project (image, title, links, summary) */
+.project {
+  margin-bottom: 50px;
+}
+/* In Projects, the giant png image of a single project */
+.project-image {
+  width: 100%;
+  /* height: auto; */
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+/* In Projects, the caption under the png image */
+.project-type {
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+/* In Projects, the row for the project title and links */
+.project-title-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/* In Projects, the name of the project */
+.project-title {
+  font-size: 20px;
+  color: blue;
+}
+/* In Projects, the links 'GitHub Code' and 'Demo' */
+.project-links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #11222d;
+}
+/* In Projects, the paragraph summary of the project */
+.project-summary {
+  font-size: 15px;
+}
+/* In Projects, the section for categorie and tools used in each project */
+.tools-used {
+  font-size: 14px;
+}
+/* In Projects, the row for each subcategory of tool and their tools */
+.tools-row {
+  margin-bottom: 8px;
+}
+/* In Projects, the category name of the tools-row (ex. 'Backend) */
+.tools-category {
+  font-weight: bold;
+  margin-right: 10px;
+}
+/* In Projects, the tool name of the tools-row (ex. 'Java') */
+.tool {
+  display: inline-block;
+  background-color: #e0e0e0;
+  border-radius: 15px;
+  padding: 3px 10px;
+  margin-right: 5px;
+}
+
+
+
 /* In Skills, the background and text color */
 #skills { 
   background-color: #ffffff; 
