@@ -217,6 +217,54 @@
   margin-top: -20px;
   position: relative;
   z-index: 3;
+  padding: 4rem 0;
+}
+/* In Skills, the 'Some technologies...' header */
+.skills-header {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+/* In Skills, the text underneath the 'Some technologies...' */
+.skills-subheader {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+/* In Skills, the grid with the category name to the left and the skill icons to the right */
+.skills-grid {
+  display: grid;
+  gap: 20px;
+}
+/* In Skills, a single ROW with the category name and skill icons */
+.skill-category {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+}
+/* In Skills, the name of the skill on the left side */
+.category-name {
+  font-weight: bold;
+  min-width: 100px;
+}
+/* In Skills, the container of the skills for a category row */
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+/* In Skills, the container of a single skill */
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+/* In Skills, the svg icon of a single skill */
+.skill-icon svg {
+  width: 40px;
+  height: 40px;
 }
 
 
