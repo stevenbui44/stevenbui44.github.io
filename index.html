@@ -164,65 +164,7 @@
         </div>
     </section>
 
-    <!-- Script 1: Navbar appears or disappears when you scroll up/down -->
-    <script>
-        // Last scroll position
-        let lastScrollTop = 0;
-        const header = document.querySelector('header');
-        const headerHeight = header.offsetHeight;
-
-        // Event listener when you scroll up or down
-        window.addEventListener('scroll', () => {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop > lastScrollTop) {
-                // if scrolling down, bring the header up
-                header.style.transform = `translateY(-${headerHeight}px)`;
-            } 
-            else {
-                // if scrolling up, make the header reappear
-                header.style.transform = 'translateY(0)';
-            }
-            lastScrollTop = Math.max(scrollTop, 0);
-        }, false);
-    </script>
-
-    <!-- Script 2: Screen smoothly glides when you click on a navbar section link -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-
-    <!-- Script 3: Shrinking the Contact section to show section underneath -->
-    <script>
-        // Initial height - 4rem of padding (now 8 for some reason)
-        const contactSection = document.getElementById('contact');
-        const initialWidth = contactSection.offsetWidth - (8 * parseFloat(getComputedStyle(document.documentElement).fontSize));
-
-        // Event handler to resize the Contact section depending on where you are scrolling
-        window.addEventListener('scroll', () => {
-            const rect = contactSection.getBoundingClientRect();            
-            const scrollPercentage = (window.innerHeight - rect.top) / rect.height;
-
-            // Only start scaling to 85% + add gap when we're more than 90% through the section
-            if (scrollPercentage > 0.9 && scrollPercentage <= 1) {
-                const scaleFactor = 0.85 + (0.1 * (1 - scrollPercentage) * 10);
-                contactSection.style.width = `${initialWidth * scaleFactor}px`;
-                const gapHeight = 300 * (scrollPercentage - 0.9) / 0.1;
-                contactSection.style.marginBottom = `${gapHeight}px`;
-            } else if (scrollPercentage <= 0.9) {
-                contactSection.style.width = `${initialWidth}px`;
-                contactSection.style.marginBottom = '0px';
-            }
-        }, false);
-    </script>
-
-
+    <!-- Part 6: JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
