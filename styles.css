@@ -287,7 +287,8 @@
 }
 
 
-/* In Contact, the background and text color */
+
+/* In Contact, the Contact section itself */
 #contact { 
   background-color: #101d24; 
   width: 100%;
@@ -298,9 +299,128 @@
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
-  /* transition: width 0.001s ease, margin-bottom 0.001s ease; */
   transition: width 0.2s ease, margin-bottom 0.2s ease;
 }
+/* In Contact, the 'Say Hi' and 'I'm open for job offers' part */
+.contact-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+/* In Contact, the 'Say Hi' part */
+.contact-top-left {
+  width: 48%;
+}
+/* In Contact, the 'I'm open for job offers' part */
+.contact-top-right {
+  width: 48%;
+}
+/* In Contact, the text saying to 'Get in touch' only */
+.contact-middle {
+  font-size: 30px;
+  color: #4CAF50;
+  margin-bottom: 30px;
+}
+
+/* In Contact, the 'View resume' button */
+.resume-btn {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #142933;
+  color: #ffffff;
+  border: 1px solid #19323e;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: filter 0.3s ease;
+  /* transition: background-color 0.3s ease; */
+}
+/* In Contact, hovering over the 'View resume' button */
+.resume-btn:hover {
+  /* background-color: #34536f; */
+  filter: brightness(180%);
+}
+/* In Contact, the container for the email address and Copy Link button */
+.email-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #ffffff;
+  color: #25343a;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* In Contact, hovering over the email button container */
+.email-btn:hover {
+  background-color: #000000;    /* TODO: Change this */
+}
+/* In Contact, the top row of the email button ('Email', 'Copy Email') */
+.email-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 50%;
+}
+.email-text {
+  color: #e3b578;
+}
+/* In Contact, the 'Copy Email' button */
+.copy-email {
+  background-color: f2f2f2;
+  color: #2b2b2b;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+/* In Contact, hovering over the 'Copy Email' button */
+.copy-email:hover {
+  background-color: #000000;    /* TODO: Change this */
+}
+/* In Contact, the email address 'stevenbui44@gmail.com' */
+.email-address {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 50%;
+}
+/* In Contact, the row with the LinkedIn and phone number buttons */
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+}
+/* In Contact, the LinkedIn and phone number buttons */
+.half-width-btn {
+  height: 60px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #142933;
+  color: #ffffff;
+  border: 1px solid #19323e;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 49%;
+  /* transition: background-color 0.3s ease; */
+  transition: filter 0.3s ease;
+}
+/* In Contact, hovering over the LinkedIn and phone number buttons */
+.half-width-btn:hover {
+  /* background-color: #34536f; */
+  filter: brightness(180%);
+}
+
+
 
 
 
