@@ -261,17 +261,43 @@
   background-color: #f0f0f0;
   border-radius: 5px;
 }
-/* In Skills, the svg icon of a single skill */
-/* TODO: Comment this out, and only keep .skill-icon img */
-/* .skill-icon svg {
-  width: 40px;
-  height: 40px;
-} */
+/* In Skills, the image of the svg icon for a single skill */
 .skill-icon img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
+
+/* In Skills, the info box when you hover over a skill */
+.skill-info-box {
+  position: fixed;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 250px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 9;
+  transition: opacity 0.3s ease;
+}
+/* In Skills, the info box TITLE */
+.skill-info-box h3 {
+  margin-top: 5px;
+  font-size: 16px;
+}
+/* In Skills, the info box DESCRIPTION */
+.skill-info-box p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* In Skills, the info box BULLET POINTS */
+.skill-info-box ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+
 
 
 
