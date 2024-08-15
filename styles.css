@@ -262,11 +262,16 @@
   border-radius: 5px;
 }
 /* In Skills, the svg icon of a single skill */
-.skill-icon svg {
+/* TODO: Comment this out, and only keep .skill-icon img */
+/* .skill-icon svg {
   width: 40px;
   height: 40px;
+} */
+.skill-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
 }
-
 
 
 
