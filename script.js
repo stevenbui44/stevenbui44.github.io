@@ -32,20 +32,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
     
     // Script 3: Shrinking the Contact section to show section underneath
     const contactSection = document.getElementById('contact');
-    const initialWidth = contactSection.offsetWidth - (8 * parseFloat(getComputedStyle(document.documentElement).fontSize));
+    let initialWidth = contactSection.offsetWidth - (8 * parseFloat(getComputedStyle(document.documentElement).fontSize));
 
     window.addEventListener('scroll', () => {
         const rect = contactSection.getBoundingClientRect();            
-        const scrollPercentage = (window.innerHeight - rect.top) / rect.height;
+        let scrollPercentage = (window.innerHeight - rect.top) / rect.height;
+        scrollPercentage = Math.min(Math.max(scrollPercentage, 0), 1);
 
-        if (scrollPercentage > 0.9 && scrollPercentage <= 1) {
+        if (scrollPercentage > 0.9) {
             const scaleFactor = 0.85 + (0.1 * (1 - scrollPercentage) * 10);
             contactSection.style.width = `${initialWidth * scaleFactor}px`;
             const gapHeight = 300 * (scrollPercentage - 0.9) / 0.1;
             contactSection.style.marginBottom = `${gapHeight}px`;
-        } else if (scrollPercentage <= 0.9) {
+        } 
+        else {
             contactSection.style.width = `${initialWidth}px`;
             contactSection.style.marginBottom = '0px';
         }
     }, false);
+
+    window.addEventListener('resize', () => {
+        initialWidth = contactSection.offsetWidth - (8 * parseFloat(getComputedStyle(document.documentElement).fontSize));
+    });
 });
