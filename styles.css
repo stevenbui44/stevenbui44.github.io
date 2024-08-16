@@ -32,6 +32,7 @@
   position: relative;
   display: flex;
   border-bottom: 2px solid #22333c;
+  z-index: 9;
 }
 /* In About, the profile picture section */
 .about-top-left {
@@ -42,6 +43,7 @@
   position: relative;
   flex: 0 0 auto; /* Don't grow or shrink, stay at auto size */
   width: 100px; /* Fixed width for the avatar section */
+  z-index: 10;
 }
 /* In About, the vertical border (left side) */
 .about-top-left-border {
@@ -56,12 +58,15 @@
   width: 80px;
   height: 80px;
   position: relative;
+  z-index: 11;
 }
 .avatar {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+  position: relative;
+  z-index: 12;
 }
 /* In About, the university info section */
 .about-top-right {
@@ -84,6 +89,7 @@
   font-size: 18px;
   line-height: 1.4;
   word-wrap: break-word;
+  color: #99a5af;
 }
 
 /* In About, the middle section of who I am */
@@ -93,7 +99,7 @@
 }
 /* In About, "Software Engineer" */
 .role {
-  color: #4CAF50;
+  color: #b4d46f;
   font-size: 14px;
 }
 /* In About, "Hello, I'm Steven." */
@@ -103,7 +109,7 @@
 }
 /* In About, my description */
 .description {
-  color: #a0a0a0;
+  color: #d1d1d1;
   font-size: 20px;
 }
 
@@ -112,7 +118,7 @@
   display: flex;
   padding-top: 20px;
   height: auto;
-  /* height: 24%; */
+  padding-bottom: 70px;
 }
 /* In About, the container for the "Grab my resume" button */
 .about-footer-left {
@@ -595,7 +601,7 @@ header {
     top: 0;
     box-sizing: border-box;
     transition: transform 0.2s ease-in-out;
-    z-index: 10;
+    z-index: 1000;
     /* border-bottom: 2px solid #cfd1d2; */
 }
 /* The line at the bottom of the navbar */
@@ -637,3 +643,18 @@ body::before {
     display: block;
     height: 0;
 }
+
+/* Static overlay over the About section */
+.static-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('images/static.jpg');
+  background-position: center;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 7;
+}
+
