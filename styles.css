@@ -30,8 +30,7 @@
 .about-top {
   height: auto;
   position: relative;
-  display: grid;
-  grid-template-columns: 15% 85%;         /* Left section 10%, right section 90% */
+  display: flex;
   border-bottom: 2px solid #22333c;
 }
 /* In About, the profile picture section */
@@ -41,6 +40,8 @@
   align-items: center;
   padding: 10px;
   position: relative;
+  flex: 0 0 auto; /* Don't grow or shrink, stay at auto size */
+  width: 100px; /* Fixed width for the avatar section */
 }
 /* In About, the vertical border (left side) */
 .about-top-left-border {
@@ -68,6 +69,7 @@
   align-items: center;
   padding: 0 20px;
   position: relative;
+  flex: 1;
 }
 /* In About, the vertical border (right side) */
 .about-top-right-border {
@@ -81,6 +83,7 @@
 .university-info {
   font-size: 18px;
   line-height: 1.4;
+  word-wrap: break-word;
 }
 
 /* In About, the middle section of who I am */
