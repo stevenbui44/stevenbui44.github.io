@@ -8,8 +8,6 @@
   justify-content: center;
   position: relative;
   z-index: 5;
-  /* height: 96vh; */
-  height: 70vh;
 }
 /* In About, the container with the content */
 .about-container {
@@ -24,22 +22,34 @@
   border-bottom: none;
   border-top: none;
   z-index: 6;
+  display: flex;
+  flex-direction: column;
 }
 
 /* In About, the top section with the avatar and university information */
 .about-top {
-  height: 26%;
+  height: auto;
+  position: relative;
   display: grid;
   grid-template-columns: 15% 85%;         /* Left section 10%, right section 90% */
-  border-bottom: 1px solid #f4f4f4;     /* Horizontal line*/
+  border-bottom: 2px solid #22333c;
 }
 /* In About, the profile picture section */
 .about-top-left {
-  border-right: 1px solid #f4f4f4;      /* Vertical line */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  position: relative;
+}
+/* In About, the vertical border (left side) */
+.about-top-left-border {
+  position: absolute;
+  top: 12.5%;
+  height: 75%;
+  width: 2px;
+  right: 0;
+  background-color: #22333c;
 }
 .avatar-container {
   width: 80px;
@@ -52,12 +62,21 @@
   object-fit: cover;
   border-radius: 50%;
 }
-
 /* In About, the university info section */
 .about-top-right {
   display: flex;
   align-items: center;
   padding: 0 20px;
+  position: relative;
+}
+/* In About, the vertical border (right side) */
+.about-top-right-border {
+  position: absolute;
+  top: 12.5%;
+  height: 75%;
+  width: 2px;
+  left: 0;
+  background-color: #0d1317;
 }
 .university-info {
   font-size: 18px;
@@ -66,7 +85,8 @@
 
 /* In About, the middle section of who I am */
 .about-bottom {
-  height: 74%;
+  height: auto;
+  border-top: 2px solid #0d1317;
 }
 /* In About, "Software Engineer" */
 .role {
@@ -87,23 +107,36 @@
 /* In About, the bottom section with the resume button and email */
 .about-footer {
   display: flex;
-  border-top: 1px solid #f4f4f4;
   padding-top: 20px;
+  height: auto;
+  /* height: 24%; */
 }
 /* In About, the container for the "Grab my resume" button */
 .about-footer-left {
-  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
 }
 /* In About, the "Grab my resume" button itself */
 .resume-button {
   cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #283640;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  /* margin-right: 10px; */
+}
+/* In About, hovering over the 'Grab my resume' button */
+.resume-button:hover {
+  background-color: #ffffff;
+  color: #2c3e50;
 }
 /* In About, the container for the email name and link */
 .about-footer-right {
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
