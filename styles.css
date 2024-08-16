@@ -501,6 +501,43 @@
 
 
 
+/* In Footer, the footer container */
+#footer {
+  background-color: #ff0000;
+  /* background-color: black; */
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* In Footer, the container where content goes */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* In Footer, the "Steven Bui Version 2.0" */
+.name-version {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+/* In Footer, your quote */
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+/* In Footer, your copyright */
+.copyright {
+  font-size: 14px;
+}
 
 
 

@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (scrollPercentage > 0.9) {
             const scaleFactor = 0.85 + (0.1 * (1 - scrollPercentage) * 10);
             contactSection.style.width = `${initialWidth * scaleFactor}px`;
-            const gapHeight = 300 * (scrollPercentage - 0.9) / 0.1;
+            const gapHeight = 250 * (scrollPercentage - 0.9) / 0.1;
             contactSection.style.marginBottom = `${gapHeight}px`;
         } 
         else {
