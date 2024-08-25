@@ -1,0 +1,37 @@
+/* University + Role */
+@font-face {
+    font-family: 'UnBPro-Light';
+    src: url('../fonts/unbpro/unb_pro_light.otf') format('opentype');
+    /* url('../fonts/unbpro/unb-office_regular.ttf') format('truetype'); */
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 'I'm Steven' in the Intro */
+@font-face {
+    font-family: 'Chewie';
+    src: url('../fonts/chewie/ChewieDEMO-Bold.otf') format('opentype'),
+    url('../fonts/chewie/ChewieDEMO-Thin.otf') format('opentype'), 
+    url('../fonts/chewie/ChewieDEMO-Regular.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* 'Hello,' in the Intro */
+@font-face {
+    font-family: 'Chewie-Light';
+    src: url('../fonts/chewie/ChewieDEMO-Thin.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Description */
+@font-face {
+    font-family: 'Cooper';
+    src: url('../fonts/cooper/cooperl.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

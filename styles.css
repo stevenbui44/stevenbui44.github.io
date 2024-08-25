@@ -86,10 +86,13 @@
   background-color: #0d1317;
 }
 .university-info {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
   word-wrap: break-word;
   color: #99a5af;
+  font-family: 'UnBPro-Light', sans-serif;
+  letter-spacing: 1px;
+  width: 220px;
 }
 
 /* In About, the middle section of who I am */
@@ -100,17 +103,28 @@
 /* In About, "Software Engineer" */
 .role {
   color: #b4d46f;
-  font-size: 14px;
+  font-size: 24px;
+  font-family: 'UnBPro-Light', sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 0;
 }
 /* In About, "Hello, I'm Steven." */
 .intro {
   color: white;
-  font-size: 30px;
+  font-size: 60px;
+  font-family: 'Chewie', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+/* In About, "Hello," */
+.intro .light-font {
+  font-family: 'Chewie-Light', sans-serif;
 }
 /* In About, my description */
 .description {
   color: #d1d1d1;
-  font-size: 20px;
+  font-size: 26px;
+  font-family: 'Cooper', sans-serif;
 }
 
 /* In About, the bottom section with the resume button and email */
@@ -653,8 +667,7 @@ body::before {
   bottom: 0;
   background-image: url('images/static.jpg');
   background-position: center;
-  opacity: 0.08;
+  opacity: 0.25;
   pointer-events: none;
   z-index: 7;
 }
-
