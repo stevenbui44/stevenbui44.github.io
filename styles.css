@@ -86,13 +86,14 @@
   background-color: #0d1317;
 }
 .university-info {
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 15px;
+  line-height: 1.6;
   word-wrap: break-word;
-  color: #99a5af;
+  /* color: #99a5af; */
+  color: white;
   font-family: 'UnBPro-Light', sans-serif;
   letter-spacing: 1px;
-  width: 220px;
+  width: 210px;
 }
 
 /* In About, the middle section of who I am */
@@ -102,17 +103,18 @@
 }
 /* In About, "Software Engineer" */
 .role {
-  color: #b4d46f;
-  font-size: 24px;
+  color: #c4ea73;
+  font-size: 18px;
   font-family: 'UnBPro-Light', sans-serif;
   letter-spacing: 2px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  margin-top: 50px;
 }
 /* In About, "Hello, I'm Steven." */
 .intro {
   color: white;
   font-size: 60px;
-  font-family: 'Chewie', sans-serif;
+  font-family: 'Chewie-Bold', sans-serif;
   margin-top: 0px;
   margin-bottom: 0;
 }
@@ -124,7 +126,9 @@
 .description {
   color: #d1d1d1;
   font-size: 26px;
-  font-family: 'Cooper', sans-serif;
+  font-family: 'Chewie-Regular', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.4;
 }
 
 /* In About, the bottom section with the resume button and email */
@@ -151,12 +155,17 @@
   border: 2px solid #ffffff;
   border-radius: 10px;
   transition: background-color 0.3s, color 0.3s;
-  /* margin-right: 10px; */
 }
 /* In About, hovering over the 'Grab my resume' button */
 .resume-button:hover {
   background-color: #ffffff;
   color: #2c3e50;
+}
+/* In About, the open in new tab icon */
+.new-tab-icon {
+  width: 18px;
+  height: 18px;
+  transform: translate(2px, 2px);
 }
 /* In About, the container for the email name and link */
 .about-footer-right {
@@ -167,10 +176,32 @@
 /* In About, the email "stevenbui44@gmail.com" */
 .email {
   margin: 0;
+  color: #afb3b5;
+  font-size: 14px;
 }
 /* In About, the link to "Craft an email" */
 .email-link {
-  font-size: 14px;
+  align-items: center; /* Aligns the icon with the text vertically */
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  margin-top: 8px;
+  display: inline-block;
+  background-image: linear-gradient(transparent calc(100% - 1px), white 1px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.3s;
+  padding-bottom: 2px;
+}
+
+.email-link:hover {
+  /* text-decoration: underline; */
+  background-size: 72% 100%;
+}
+
+.fa-paper-plane {
+  font-size: 12px;
+  margin-left: 0px;
 }
 
 
@@ -670,4 +701,5 @@ body::before {
   opacity: 0.25;
   pointer-events: none;
   z-index: 7;
+  border-radius: 20px;
 }

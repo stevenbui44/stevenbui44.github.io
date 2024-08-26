@@ -54,4 +54,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     window.addEventListener('resize', () => {
         initialWidth = contactSection.offsetWidth - (8 * parseFloat(getComputedStyle(document.documentElement).fontSize));
     });
+
+
+    // Script 4:
+    const resumeButton = document.getElementById('resumeButton');
+    resumeButton.addEventListener('click', function() {
+        const googleDriveLink = 'https://docs.google.com/document/d/1g6MWdGHvyEiPjk4_F56UQhpKvKen1qLGF2rXI3QJkMg/edit?usp=sharing';
+        window.open(googleDriveLink, '_blank');
+    });
 });

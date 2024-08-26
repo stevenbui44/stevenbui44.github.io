@@ -10,10 +10,8 @@
 
 /* 'I'm Steven' in the Intro */
 @font-face {
-    font-family: 'Chewie';
-    src: url('../fonts/chewie/ChewieDEMO-Bold.otf') format('opentype'),
-    url('../fonts/chewie/ChewieDEMO-Thin.otf') format('opentype'), 
-    url('../fonts/chewie/ChewieDEMO-Regular.otf') format('opentype');
+    font-family: 'Chewie-Bold';
+    src: url('../fonts/chewie/ChewieDEMO-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -26,12 +24,12 @@
     font-style: normal;
     font-display: swap;
 }
-
 /* Description */
 @font-face {
-    font-family: 'Cooper';
-    src: url('../fonts/cooper/cooperl.ttf') format('truetype');
+    font-family: 'Chewie-Regular';
+    src: url('../fonts/chewie/ChewieDEMO-Regular.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
+
