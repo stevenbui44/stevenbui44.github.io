@@ -33,3 +33,19 @@
     font-display: swap;
 }
 
+/* Handpicked projects... */
+@font-face {
+    font-family: 'Open-Sauce';
+    src: url('../fonts/opensauce/OpenSauceOne-Medium.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* Project description */
+@font-face {
+    font-family: 'Leyendo';
+    src: url('../fonts/leyendo/LeyendoDEMO-Regular.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

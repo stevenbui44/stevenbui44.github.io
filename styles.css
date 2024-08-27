@@ -215,24 +215,19 @@
   z-index: 4;
   padding: 4rem 0;
 }
-/* In Projects and Education, the 1200px wide container where everything is */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  padding-left: 175px;
-  padding-right: 175px;
-}
 /* In Projects, the "Handpicked projects..." header */
 .projects-header {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 10px;
+  font-family: 'Open-Sauce', sans-serif;
 }
 /* In Projects, the section description underneath "Handpicked projects..." */
 .projects-subheader {
-  font-size: 15px;
+  font-size: 20px;
   color: #000;
   margin-bottom: 30px;
+  font-family: 'Leyendo', sans-serif;
+  opacity: 0.7;
 }
 
 /* In Projects, a single project (image, title, links, summary) */
@@ -636,6 +631,21 @@ body {
     background-color: red;
 }
 
+/* In Projects, Skills, Education, and Contact, the 1200px wide container where everything is */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-left: 175px;
+  padding-right: 175px;
+}
+
+/* In Projects, the padding is specific */
+#projects .container {
+  padding-left: 310px;
+  padding-right: 310px;
+}
+
 /* The navbar header */
 header {
     background-color: #1f2e38;
@@ -675,7 +685,7 @@ nav a {
 /* The heights of each of the 5 sections */
 section {
     padding: 4rem 2rem;
-    min-height: 10vh;  /* TODO: adjust this once you add actual content */
+    /* min-height: 10vh; */
     /* border-radius: 20px; */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
