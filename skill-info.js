@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             'Python': {
                 description: 'A high-level, versatile programming language for many purposes.',
-                bulletPoints: ['Syncify', 'BloodLink']
+                bulletPoints: ['Syncify']
             },
             'C': {
                 description: 'A low-level, procedural computer programming language.',
@@ -105,11 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             'HTML': {
                 description: 'A markup language for structuring web content.',
-                bulletPoints: ['FlashCode', 'Movia', 'Syncify', 'CoffeeMaker', 'BloodLink']
+                bulletPoints: ['FlashCode', 'Movia', 'Syncify', 'CoffeeMaker']
             },
             'CSS': {
                 description: 'A stylesheet language for better web page presentation.',
-                bulletPoints: ['FlashCode', 'Movia', 'Syncify', 'CoffeeMaker', 'BloodLink']
+                bulletPoints: ['FlashCode', 'Movia', 'Syncify', 'CoffeeMaker']
             },
 
             // 3: Backend
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             'Flask': {
                 description: 'A lightweight Python web application framework.',
-                bulletPoints: ['Syncify', 'BloodLink']
+                bulletPoints: ['Syncify']
             },
             'Spring Security': {
                 description: 'An authentication and access-control framework for Java.',
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             'SQLite': {
                 description: 'A lightweight, serverless relational database engine.',
-                bulletPoints: ['BloodLink', 'Weekly Project News (Internship)']
+                bulletPoints: ['Weekly Project News (Internship)']
             },
             'Hibernate': {
                 description: 'An object-relational mapping tool for Java.',
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // 5: Software Tools
             'Postman': {
                 description: 'An API development and testing tool.',
-                bulletPoints: ['FlashCode', 'Movia', 'BloodLink']
+                bulletPoints: ['FlashCode', 'Movia']
             },
             'Jenkins': {
                 description: 'An open-source automation server for CI/CD and testing.',
@@ -167,11 +167,11 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             'GitHub': {
                 description: 'A popular web-based platform for version control.',
-                bulletPoints: ['FlashCode', 'Movia', 'Syncify', 'CoffeeMaker', 'BloodLink']
+                bulletPoints: ['FlashCode', 'Movia', 'Syncify', 'CoffeeMaker']
             },
             'VS Code': {
                 description: 'A lightweight, extensible code editor.',
-                bulletPoints: ['Movia', 'Syncify', 'BloodLink']
+                bulletPoints: ['Movia', 'Syncify']
             },
             'Eclipse': {
                 description: 'An integrated development environment for Java.',
