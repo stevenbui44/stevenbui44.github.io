@@ -645,6 +645,29 @@ body {
   padding-left: 310px;
   padding-right: 310px;
 }
+/* RESIZE 1: In Projects, the container if the screen is too small */
+@media screen and (max-width: 1171px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  #projects .container {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+}
+/* RESIZE 2: In Projects, the container if the screen is even smaller (mobile) */
+@media screen and (max-width: 768px) {
+  .container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  #projects .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
 
 /* The navbar header */
 header {
