@@ -8,7 +8,7 @@
     font-display: swap;
 }
 
-/* 'I'm Steven' in the Intro */
+/* 'I'm Steven' in the Intro, and project title */
 @font-face {
     font-family: 'Chewie-Bold';
     src: url('../fonts/chewie/ChewieDEMO-Bold.otf') format('opentype');
@@ -41,10 +41,26 @@
     font-style: normal;
     font-display: swap;
 }
+/* Handpicked projects... */
+@font-face {
+    font-family: 'Open-Sauce-Light';
+    src: url('../fonts/opensauce/OpenSauceOne-Light.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+/* Project subheader */
+@font-face {
+    font-family: 'Spectral';
+    src: url('../fonts/spectral/Spectral-ExtraLight.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 /* Project description */
 @font-face {
-    font-family: 'Leyendo';
-    src: url('../fonts/leyendo/LeyendoDEMO-Regular.otf') format('opentype');
+    font-family: 'Zabal';
+    src: url('../fonts/zabal/ZabalDEMO-Regular.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
