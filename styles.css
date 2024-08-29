@@ -216,18 +216,21 @@
   padding: 4rem 0;
 }
 /* In Projects, the "Handpicked projects..." header */
-.projects-header {
+.projects-header,
+.skills-header,
+.education-header {
   font-size: 40px;
   margin-bottom: 10px;
   font-family: 'Open-Sauce', sans-serif;
 }
 /* In Projects, the section description underneath "Handpicked projects..." */
-.projects-subheader {
+.projects-subheader,
+.skills-subheader,
+.education-subheader {
   font-size: 20px;
   color: #000;
   margin-bottom: 0px;
   font-family: 'Spectral', sans-serif;
-  /* opacity: 0.7; */
   line-height: 1.3;
 }
 
@@ -293,12 +296,13 @@
 /* In Projects, the underline underneath the Demo link */
 .demo-link {
   background-image: linear-gradient(transparent calc(100% - 1px), #0366d6 1px);
-} */
+}
 
 
 /* In Projects, the paragraph summary of the project */
 .project-summary {
   font-size: 18px;
+  /* font-family: 'Zabal', sans-serif; */
   font-family: 'Zabal', sans-serif;
   line-height: 1.5;
   opacity: 0.7;
@@ -330,21 +334,21 @@
 .tool {
   display: inline-block;
   background-color: #d2d1ce;
-  border: 1px solid #b9b7b3;
+  /* border: 1px solid #b9b7b3; */
   border-radius: 5px;
   padding: 3px 10px;
   margin-right: 8px;
   color: #11222d;
+  /* color: #575555; */
   opacity: 0.9;
   text-align: center;
   font-family: 'Open-Sauce-Light', sans-serif;
   font-size: 14px;
   letter-spacing: 0.5px;
   transition: filter 0.3s ease;
-
 }
 .tool:hover {
-  filter: brightness(90%);
+  filter: brightness(110%);
   cursor: default;
 }
 
@@ -361,50 +365,77 @@
 }
 /* In Skills, the 'Some technologies...' header */
 .skills-header {
-  font-size: 30px;
+  /* font-size: 30px; */
   margin-bottom: 15px;
 }
 /* In Skills, the text underneath the 'Some technologies...' */
 .skills-subheader {
-  font-size: 15px;
+  /* font-size: 15px; */
   margin-bottom: 30px;
 }
 /* In Skills, the grid with the category name to the left and the skill icons to the right */
-.skills-grid {
+/* .skills-grid {
   display: grid;
   gap: 20px;
+} */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  width: 100%;
+  /* width: fit-content; */
+  margin: 0 auto;
+  gap: 20px;
+  /* max-width: 400px; */
 }
 /* In Skills, a single ROW with the category name and skill icons */
 .skill-category {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 100px 1fr;
+  /* grid-template-columns: 1fr 8fr; */
+  /* grid-template-columns: minmax(100px, 150px) 1fr; */
   align-items: center;
 }
 /* In Skills, the name of the skill on the left side */
 .category-name {
   font-weight: bold;
-  min-width: 100px;
+  /* min-width: 100px; */
+  font-family: 'Zabal', sans-serif;
+  text-align: center;
+  /* opacity: 0.7; */
 }
 /* In Skills, the container of the skills for a category row */
 .skill-icons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 /* In Skills, the container of a single skill */
 .skill-icon {
-  width: 50px;
-  height: 50px;
+  width: calc(15% - 10px);
+  aspect-ratio: 1 / 1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
-  border-radius: 5px;
+  border-radius: 15px;
+  margin-right: 10px;
+  /* border: 2px solid #e3e3e3; */
+  cursor: pointer;
+  transition: filter 0.3s ease;
+  box-shadow: 0 0 4px rgb(0, 0, 0, 0.2);
+}
+.skill-icon:hover {
+  filter: brightness(96%);
 }
 /* In Skills, the image of the svg icon for a single skill */
 .skill-icon img {
-  width: 40px;
-  height: 40px;
+  width: 75%;
+  height: 75%;
   object-fit: contain;
 }
 
@@ -452,12 +483,12 @@
 }
 /* In Education, the header 'Some coursework...' */
 .education-header {
-  font-size: 30px;
+  /* font-size: 30px; */
   margin-bottom: 15px;
 }
 /* In Education, the section description underneath 'Some coursework...' */
 .education-subheader {
-  font-size: 20px;
+  /* font-size: 20px; */
   margin-bottom: 30px;
 }
 /* In Education, the 'View transcript' button */
@@ -698,20 +729,30 @@ body {
   padding-right: 175px;
 }
 
-/* In Projects, the padding is specific */
-#projects .container {
+/* In Projects, Skills, and Education, the padding is specific */
+#projects .container,
+#skills .container,
+#education .container {
   padding-left: 310px;
   padding-right: 310px;
 }
-/* RESIZE 1: In Projects, the container if the screen is too small */
+/* RESIZE 1: In Projects, Skills, and Education, the container if the screen is too small */
 @media screen and (max-width: 1171px) {
   .container {
     padding-left: 100px;
     padding-right: 100px;
   }
-  #projects .container {
+  #projects .container,
+  #skills .container,
+  #education .container {
     padding-left: 220px;
     padding-right: 220px;
+  }
+  .category-name {
+    display: none;
+  }
+  .skill-category {
+    grid-template-columns: 1fr;
   }
 }
 /* RESIZE 2: In Projects, the container if the screen is even smaller (mobile) */
@@ -720,9 +761,17 @@ body {
     padding-left: 100px;
     padding-right: 100px;
   }
-  #projects .container {
+  #projects .container,
+  #skills .container,
+  #education .container {
     padding-left: 60px;
     padding-right: 60px;
+  }
+  .category-name {
+    display: none;
+  }
+  .skill-category {
+    grid-template-columns: 1fr;
   }
 }
 
