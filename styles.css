@@ -238,6 +238,12 @@
 .project {
   margin-bottom: 45px;
 }
+.projects-header i {
+  color: #e5ac61;
+  margin-left: -5px;
+  margin-right: 2px;
+  /* font-family: 'Open-Sauce-Light', sans-serif; */
+}
 /* In Projects, the giant png image of a single project */
 .project-image {
   width: 100%;
@@ -368,6 +374,12 @@
   /* font-size: 30px; */
   margin-bottom: 15px;
 }
+.skills-header i {
+  color: #e5ac61;
+  margin-left: -5px;
+  margin-right: 2px;
+  /* font-family: 'Open-Sauce-Light', sans-serif; */
+}
 /* In Skills, the text underneath the 'Some technologies...' */
 .skills-subheader {
   /* font-size: 15px; */
@@ -485,6 +497,12 @@
 .education-header {
   /* font-size: 30px; */
   margin-bottom: 15px;
+}
+.education-header i {
+  color: #e5ac61;
+  margin-left: -2px;
+  margin-right: 3px;
+  /* font-family: 'Open-Sauce-Light', sans-serif; */
 }
 /* In Education, the section description underneath 'Some coursework...' */
 .education-subheader {
