@@ -280,7 +280,8 @@
   margin-top: 10px;
 }
 /* In Projects, the links 'GitHub' and 'Demo' */
-.project-links a {
+.project-links a,
+.project-links span {
   margin-left: 30px;
   text-decoration: none;
   color: #11222d;
@@ -290,11 +291,19 @@
   background-repeat: no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.3s;
+  transition: opacity 0.2s;
 }
 /* In Projects, hovering over the links creates an underline */
 .project-links a:hover {
   background-size: 100% 100%;
 }
+.project-links .github-link-wrapper a:hover {
+  background-size: 0;
+  cursor:not-allowed;
+  opacity: 0.5;
+}
+
+
 /* In Projects, the underline underneath the GitHub link */
 .github-link {
   background-image: linear-gradient(transparent calc(100% - 1px), #24292e 1px);
@@ -303,6 +312,37 @@
 .demo-link {
   background-image: linear-gradient(transparent calc(100% - 1px), #0366d6 1px);
 }
+
+.github-link-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.github-link-wrapper .tooltip {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgba(85, 85, 85, 0.8);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -150px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.github-link-wrapper:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
 
 
 /* In Projects, the paragraph summary of the project */
