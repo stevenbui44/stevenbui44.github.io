@@ -749,12 +749,19 @@
 .name-version {
   font-size: 30px;
   margin-bottom: 10px;
+  font-family: 'Chewie-Bold', sans-serif;
 }
 /* In Footer, your quote */
 .quote {
   font-size: 20px;
-  font-style: italic;
+  /* font-style: italic; */
+  font-family: 'Chewie-Regular', sans-serif;
   margin-bottom: 10px;
+}
+.quote i {
+  /* color: blue; */
+  /* font-family: 'Times New Roman', sans-serif; */
+  font-family: 'Chewie-Light', sans-serif;
 }
 /* In Footer, your copyright */
 .copyright {
