@@ -493,6 +493,7 @@
   position: relative;
   z-index: 2;
   padding: 4rem 0;
+  margin-bottom: 280px;
 }
 /* In Education, the header 'Some coursework...' */
 .education-header {
@@ -725,8 +726,10 @@
 
 /* In Footer, the footer container */
 #footer {
-  background-color: #ff0000;
+  /* background-color: red; */
   /* background-color: black; */
+  /* background-color: #fbf6ef; */
+  background-color: #101d24;
   color: #ffffff;
   text-align: center;
   position: fixed;
@@ -747,25 +750,34 @@
 }
 /* In Footer, the "Steven Bui Version 2.0" */
 .name-version {
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 10px;
-  font-family: 'Chewie-Bold', sans-serif;
+  font-family: 'Chewie-Regular', sans-serif;
+  transform: translateY(-50px);
 }
 /* In Footer, your quote */
 .quote {
-  font-size: 20px;
+  font-size: 22px;
   /* font-style: italic; */
   font-family: 'Chewie-Regular', sans-serif;
   margin-bottom: 10px;
+  transform: translateY(-40px);
+  padding-left: 100px;
+  padding-right: 100px;
+  opacity: 0.7;
 }
 .quote i {
   /* color: blue; */
   /* font-family: 'Times New Roman', sans-serif; */
-  font-family: 'Chewie-Light', sans-serif;
+  font-family: 'KG', sans-serif;
+  letter-spacing: 0.6px;
+  font-style:normal;
 }
 /* In Footer, your copyright */
 .copyright {
-  font-size: 14px;
+  font-size: 18px;
+  font-family: 'Chewie-Light', Helvetica, sans-serif;
+  transform: translateY(-10px);
 }
 
 
@@ -775,7 +787,8 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: #fbf6ef; */
-    background-color: red;
+    /* background-color: red; */
+    background-color: #101d24;
 }
 
 /* In Projects, Skills, Education, and Contact, the 1200px wide container where everything is */
