@@ -572,8 +572,10 @@
 /* In Education, hovering over the 'View transcript' button makes it darker */
 .view-transcript-btn:hover {
   background-color: #dcdbd7;
-
-  /* border: 2px solid #adaba8; */
+}
+.transcript-link {
+  text-decoration: none;
+  color: black;
 }
 
 /* In Education, the table for courses */
@@ -799,7 +801,7 @@
 .quote {
   font-size: 22px;
   /* font-style: italic; */
-  font-family: 'Chewie-Regular', sans-serif;
+  font-family: 'Chewie-Light', sans-serif;
   margin-bottom: 10px;
   transform: translateY(-40px);
   padding-left: 100px;
@@ -808,16 +810,16 @@
 }
 .quote i {
   /* color: blue; */
-  /* font-family: 'Times New Roman', sans-serif; */
-  font-family: 'KG', sans-serif;
+  /* font-family: 'KG', sans-serif; */
+  font-family: 'Chewie-Regular', sans-serif;
   letter-spacing: 0.6px;
   font-style:normal;
 }
 /* In Footer, your copyright */
 .copyright {
-  font-size: 18px;
-  font-family: 'Chewie-Light', Helvetica, sans-serif;
-  transform: translateY(-10px);
+  font-size: 16px;
+  font-family: 'UnBPro-Light', Helvetica, sans-serif;
+  transform: translateY(-20px);
 }
 
 
@@ -865,6 +867,9 @@ body {
   .skill-category {
     grid-template-columns: 1fr;
   }
+  nav a:last-child {
+    margin-right: 0px !important;
+  }
 }
 /* RESIZE 2: In Projects, the container if the screen is even smaller (mobile) */
 @media screen and (max-width: 768px) {
@@ -884,6 +889,10 @@ body {
   .skill-category {
     grid-template-columns: 1fr;
   }
+
+  nav a:first-child {
+    display: none;
+}
 }
 
 
@@ -921,7 +930,21 @@ nav a {
     color: white;
     text-decoration: none;
     margin-left: 1rem;
+    font-family: 'Mazin', sans-serif;
+    border-radius: 15px;
+    background-color: #1f2e38;
+    border: 1px solid #36434c;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
 }
+nav a i {
+  margin-right: 0.5rem;
+}
+nav a:last-child {
+  margin-right: 200px;
+}
+
 
 /* The heights of each of the 5 sections */
 section {
@@ -954,3 +977,7 @@ body::before {
   z-index: 7;
   border-radius: 20px;
 }
+
+
+
+

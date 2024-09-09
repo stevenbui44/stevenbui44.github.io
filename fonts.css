@@ -74,3 +74,12 @@
     font-style: normal;
     font-display: swap;
 }
+
+/* Dropdown header links */
+@font-face {
+    font-family: 'Mazin';
+    src: url('../fonts/mazin/MazinDEMO-Light.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
