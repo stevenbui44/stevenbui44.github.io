@@ -974,11 +974,18 @@ body {
     align-items: flex-start;
     margin-left: 0;
     padding-left: 0;
+    margin-right: 0px;
   }
   .project-links {
     margin-top: 10px;
     margin-left: 0;
     padding-left: 0;
+    transform: translateX(-30px);
+  }
+
+  .github-link-wrapper {
+    position: relative;
+    display: inline-block;
   }
 
 
