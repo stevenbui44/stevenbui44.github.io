@@ -908,15 +908,24 @@ body {
 /* RESIZE 2: In Projects, the container if the screen is even smaller (mobile) */
 @media screen and (max-width: 768px) {
   .container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   #projects .container,
   #skills .container,
   #education .container {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
+  .about-container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    border: 0px solid #273f53;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+
   .category-name {
     display: none;
   }
@@ -924,9 +933,81 @@ body {
     grid-template-columns: 1fr;
   }
 
+  /* Don't show 'About' in the header navbar */
   nav a:first-child {
     display: none;
-}
+  }
+
+  .course-table {
+    font-size: 14px;
+  }
+
+  .course-table th, 
+  .course-table td {
+    padding: 10px 5px;
+  }
+  /* Hide the Year column */
+  .course-table th:nth-child(4),
+  .course-table td:nth-child(4) {
+    display: none;
+  }
+  .course-table th:first-child,
+  .course-table td:first-child {
+    width: 30%;
+  }
+  .course-table th:nth-child(2),
+  .course-table td:nth-child(2) {
+    width: 55%;
+  }
+  .course-table th:nth-child(3),
+  .course-table td:nth-child(3) {
+    width: 15%;
+    text-align: center;
+  }
+  .course-table th:nth-child(3) {
+    text-align: left;
+  }
+
+
+  .project-title-links {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .project-links {
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+
+  .footer-content {
+    margin: 0;
+    padding: 0;
+  }
+  .quote {
+    padding-left: 20px;
+    padding-right: 20px;
+    transform: translateY(-40px);
+  }
+  .copyright {
+    transform: translateY(-30px);
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-family: 'Mazin', sans-serif;
+    border-radius: 15px;
+    background-color: #1f2e38;
+    border: 1px solid #36434c;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
 }
 
 
