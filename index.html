@@ -88,7 +88,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
                         </a>
-                        <a href="#" class="demo-link">
+                        <a href="#" class="demo-link" id="flashcodeDemoLink">
                             Demo
                             <svg class="new-tab-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -131,7 +131,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
                         </a>
-                        <a href="#" class="demo-link">
+                        <a href="#" class="demo-link" id="moviaDemoLink">
                             Demo
                             <svg class="new-tab-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -174,7 +174,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
                         </a>
-                        <a href="#" class="demo-link">
+                        <a href="#" class="demo-link" id="syncifyDemoLink">
                             Demo
                             <svg class="new-tab-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -218,7 +218,7 @@
                             </a>
                             <span class="tooltip">Sorry, this is a private project I worked on at university :( But you can check out the demo for it!</span>
                         </div>
-                        <a href="#" class="demo-link">
+                        <a href="#" class="demo-link"  id="coffeemakerDemoLink">
                             Demo
                             <svg class="new-tab-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -248,6 +248,46 @@
                 </div>
             </div>
 
+            
+            <!-- 2.1.1: FlashCode demo -->
+            <div id="flashcodeVideoPopup" class="video-popup">
+                <div class="video-container">
+                    <video id="flashcodeDemoVideo" controls>
+                        <source src="demos/FlashCode-Demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- 2.2.1: Movia demo -->
+            <div id="moviaVideoPopup" class="video-popup">
+                <div class="video-container">
+                    <video id="moviaDemoVideo" controls>
+                        <source src="demos/Movia-Demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- 2.3.1: Syncify demo -->
+            <div id="syncifyVideoPopup" class="video-popup">
+                <div class="video-container">
+                    <video id="syncifyDemoVideo" controls>
+                        <source src="demos/Syncify-Demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- 2.4.1: CoffeeMaker demo -->
+            <div id="coffeemakerVideoPopup" class="video-popup">
+                <div class="video-container">
+                    <video id="coffeemakerDemoVideo" controls>
+                        <source src="demos/CoffeeMaker-Demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -427,7 +467,7 @@
                         <td>2024</td>
                     </tr>
                     <tr>
-                        <td class="senior-design"><a href="https://sdc.csc.ncsu.edu/projects#21">Senior Design Project</a></td>
+                        <td class="senior-design"><a href="https://sdc.csc.ncsu.edu/projects#21" target="_blank">Senior Design Project</a></td>
                         <td>Security integration and custom LLM creation/training for Cisco in team of 5</td>
                         <td>-</td>
                         <td>2024</td>
@@ -590,6 +630,30 @@
 
     <!-- Part 7: JavaScript -->
     <script src="script.js"></script>
+    <script src="demos.js"></script>
     <script src="skill-info.js"></script>
+
+
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const demoLink = document.getElementById('syncifyDemoLink');
+            const videoPopup = document.getElementById('syncifyVideoPopup');
+            const demoVideo = document.getElementById('syncifyDemoVideo');
+
+            demoLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                videoPopup.style.display = 'flex';
+                demoVideo.play();
+            });
+
+            videoPopup.addEventListener('click', function(e) {
+                if (e.target === videoPopup) {
+                    videoPopup.style.display = 'none';
+                    demoVideo.pause();
+                    demoVideo.currentTime = 0;
+                }
+            });
+        });
+    </script> -->
 </body>
 </html>
